@@ -1,29 +1,29 @@
-import styles from "./placeentry.module.css";
-
-interface PlaceEntryProps {
-  title: string;
-  placename: string;
-  country: string;
-  image: string;
-  location: string;
-  explanation: string;
-}
+import PlaceEntryProps from "../utils/place-entry-props";
+import styles from "./placestyles.module.css";
 
 function PlaceEntry(props: PlaceEntryProps): JSX.Element {
+  const divider: string = "_".repeat(100);
   return (
-    <section className={styles.sectionbody}>
-      <h2 className={styles.sectionheader}>{props.title}</h2>
-      <h4>
-        {props.placename}
-        <span> | </span>
-        {props.country}
-        <span> | </span>
-        <a href={props.location}>Find on Google Maps</a>
-      </h4>
-      <img src={props.image} width="70%" alt="This particular place" />
-
-      <p>{props.explanation}</p>
-    </section>
+    <>
+      <section className={styles.entry}>
+        <h2 className={styles.title}>{props.title}</h2>
+        <h4 className={styles.subtitle}>
+          {props.placename}
+          <span> | </span>
+          {props.country}
+        </h4>
+        <a href={props.location} className={styles.loc}>
+          Find on Google Maps
+        </a>
+        <img
+          src={props.image}
+          alt="This particular place"
+          className={styles.picture}
+        />
+        <p className={styles.explanation}> {props.explanation} </p>
+        <p className={styles.explanation}> {divider} </p>
+      </section>
+    </>
   );
 }
 

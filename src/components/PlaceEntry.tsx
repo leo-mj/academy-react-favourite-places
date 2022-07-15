@@ -1,4 +1,4 @@
-import styles from "./placeentry.module.css"
+import styles from "./placeentry.module.css";
 
 interface PlaceEntryProps {
   title: string;

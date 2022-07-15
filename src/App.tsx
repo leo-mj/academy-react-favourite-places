@@ -1,7 +1,7 @@
 import AppHeader from "./components/AppHeader";
 import MainContent from "./components/MainContent";
 import AppFooter from "./components/AppFooter";
-import styles from "./mystyles.module.css"
+import styles from "./mystyles.module.css";
 
 function App(): JSX.Element {
   return (
@@ -10,7 +10,7 @@ function App(): JSX.Element {
       <body className={styles.main}>
         <MainContent />
       </body>
-      
+
       <AppFooter />
     </>
   );

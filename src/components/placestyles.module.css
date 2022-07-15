@@ -1,0 +1,62 @@
+.content {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry {
+  display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  background-color: #cacfd6;
+  border-radius: 10px;
+  padding-bottom: 40px;
+}
+
+.title {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.subtitle {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+.loc {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+}
+
+.picture {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.explanation {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}

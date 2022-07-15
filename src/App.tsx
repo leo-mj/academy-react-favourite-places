@@ -5,14 +5,17 @@ import styles from "./mystyles.module.css";
 
 function App(): JSX.Element {
   return (
-    <>
-      <AppHeader />
-      <body className={styles.main}>
+    <div className={styles.main}>
+      <section className={styles.heading}>
+        <AppHeader />
+      </section>
+      <body>
         <MainContent />
       </body>
-
-      <AppFooter />
-    </>
+      <section className={styles.footer}>
+        <AppFooter />
+      </section>
+    </div>
   );
 }
 
